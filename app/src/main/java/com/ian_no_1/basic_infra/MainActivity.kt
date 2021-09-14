@@ -13,6 +13,4 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.tryMe.setOnClickListener{}
     }
-
-
 }
