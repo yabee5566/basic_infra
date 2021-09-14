@@ -40,7 +40,7 @@ class ApiModule {
     @Singleton
     @ApiClient
     fun provideApiClient(
-        @ApiLoggingInterceptor logging:Interceptor
+        @ApiLoggingInterceptor loggingInterceptor:Interceptor
     ) :OkHttpClient{
         val dispatcher = Dispatcher()
         dispatcher.maxRequests = ApiConst.MAX_PARALLEL_REQUESTS
@@ -54,7 +54,7 @@ class ApiModule {
             )
             .retryOnConnectionFailure(false)
             .dispatcher(dispatcher)
-            .addInterceptor(logging)
+            .addInterceptor(loggingInterceptor)
             .protocols(listOf(Protocol.HTTP_1_1))
             .build()
     }
@@ -64,5 +64,11 @@ class ApiModule {
     @Singleton
     fun provideMoshi(): Moshi {
         return Moshi.Builder().build()
+    }
+
+    @Provides
+    @Singleton
+    fun provideDuckApi(@ApiRetrofit retrofit: Retrofit): DuckApi {
+        return retrofit.create(DuckApi::class.java)
     }
 }

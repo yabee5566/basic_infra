@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">basic_infra</string>
-    <string name="default_api_host">https://random-d.uk/api/quack</string>`
+    <string name="default_api_host">https://random-d.uk/api/quack/</string>`
 
 </resources>
