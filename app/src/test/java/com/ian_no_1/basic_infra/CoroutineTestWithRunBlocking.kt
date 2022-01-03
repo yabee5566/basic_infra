@@ -30,8 +30,4 @@ class CoroutineTestWithRunBlocking {
 
     }
 
-    @Test
-    fun testSuspendFunRunBlockingTest() {
-
-    }
 }
