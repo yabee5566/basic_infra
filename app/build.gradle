@@ -6,15 +6,15 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 32
 
     buildFeatures {
         viewBinding = true
     }
     defaultConfig {
         applicationId "com.ian_no_1.basic_infra"
-        minSdk 24
-        targetSdk 30
+        minSdk 28
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -40,20 +40,20 @@ dependencies {
     implementation 'com.squareup.moshi:moshi:1.13.0'
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.dagger:hilt-android:2.42'
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
 
     kapt 'com.google.dagger:hilt-compiler:2.42'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha01"
-    implementation 'androidx.activity:activity-ktx:1.5.0'
-    implementation 'androidx.fragment:fragment-ktx:1.5.0'
+    implementation 'androidx.activity:activity-ktx:1.5.1'
+    implementation 'androidx.fragment:fragment-ktx:1.5.2'
     kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.13.0'
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10'
-    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10'
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4'
     testImplementation 'androidx.arch.core:core-testing:2.1.0'
 
 
