@@ -55,15 +55,8 @@ fun playSelectClause() {
         }
     }
     sleep(200000)
-    GlobalScope.launch {
-        resultCh.collect {
-            println("c2 receive <<<  $it ")
-        }
-    }
-    sleep(200000)
 }
 
 fun main() {
     playSelectClause()
-//    playGeneralizedSelect()
 }
