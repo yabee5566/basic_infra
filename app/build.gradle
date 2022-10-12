@@ -34,6 +34,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.ian_no_1.basic_infra'
 }
 
 dependencies {
